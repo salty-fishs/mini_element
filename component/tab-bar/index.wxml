@@ -1,0 +1,26 @@
+<view class="container">
+  <!-- tab导航栏 -->
+  <!-- scroll-left属性可以控制滚动条位置 -->
+  <!-- scroll-with-animation滚动添加动画过渡 -->
+  <scroll-view scroll-x="true" class="nav" scroll-left="{{navScrollLeft}}" scroll-with-animation="{{true}}">
+    <block wx:for="{{tabBar}}" wx:for-index="idx" wx:for-item="navItem" wx:key="idx">
+      <button class="nav-item {{currentTab == idx ?'active':''}}" formType="submit" data-current="{{idx}}" bindtap="switchNav">
+        <image class='nav-image' src="{{currentTab == idx ?navItem.yesSrc:navItem.noSrc}}" />
+        <view>{{navItem.text}}</view>
+      </button>
+    </block>
+  </scroll-view>
+  <!-- 页面内容 -->
+  <scroll-view scroll-y  style="margin-top:1px; height: {{scroll_height}}px;" wx:if="{{currentTab == 0}}">
+    <slot name='tab-frist'></slot>
+  </scroll-view>
+  <scroll-view wx:if="{{currentTab == 1}}">
+    <slot name='tab-second'></slot>
+  </scroll-view>
+  <scroll-view wx:if="{{currentTab == 2}}">
+    <slot name='tab-third'></slot>
+  </scroll-view>
+  <scroll-view wx:if="{{currentTab == 3}}">
+    <slot name='tab-fourth'></slot>
+  </scroll-view>
+</view>

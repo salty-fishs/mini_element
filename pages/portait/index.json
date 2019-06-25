@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "b-top-nav": "/component/top-navigation/index",
+    "b-swiper-switch": "/component/switch-portait/index"
+  }
+}

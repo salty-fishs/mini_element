@@ -1,0 +1,56 @@
+
+
+<b-top-nav title="component1111" hidden="true" />
+<b-tab-bar tabBar="{{tabBar}}" bind:tabBar="goTabBar" currentTab="{{currentTab}}">
+  <view slot="tab-frist">
+  1
+    <!-- 轮播图 -->
+    <b-banner swiperHeight="300" banners="{{banner}}" bind:banners="getBanners" />
+    <!-- 点击加法减法 -->
+    <b-add-and-subtract price='{{price}}' bind:plus="bindPlus" />
+    <view>{{price}}---- {{totalPrice}}</view>
+    <!-- textarea -->
+    <!-- <b-textarea /> -->
+    <!-- 弹窗 -->
+    <view bindtap='getPopupWindow'>弹窗</view>
+    <b-popup-window hidden="{{popupWindow}}" animationHidden="{{animationHidden}}" bind:popupWindow="guanPopupWindow">
+      内容
+    </b-popup-window>
+    <!-- 详情 -->
+    <!-- <view bindtap='details'>详情</view>
+    <!-- 多选 -->
+    <b-choose selected="{{selected}}" /> 
+    <!-- 防止多次点击跳转 -->
+    <button bindtap='tap' data-key='abc'>tap</button>
+    <!-- 上传多张需要剪切的图片 -->
+    <b-add-more-img/>
+
+  </view>
+  <!-- 我的页面 -->
+  <view slot="tab-second">
+  <b-count-down />
+
+    <!-- 图片剪切 -->
+    <view class='avatar-box'>
+      <image src="{{imgSrc}}" name="src" class="avatar" bindtap='getLicence'></image>
+      <view class="avatar-item" bindtap="getLicence" hidden='{{avatarItemHidden}}'>
+        <text>点击添加图片</text>
+      </view>
+    </view>
+    <view hidden='{{imageCropperHidden}}'>
+      <image-cropper id="image-cropper" limit_move="{{true}}" disable_rotate="{{true}}" width="{{width}}" height="{{height}}" imgSrc="{{src}}" bindload="cropperload" bindimageload="loadimage" bindtapcut="clickcut" bind:determine="getImage" bind:agin="getAgin"
+        bind:shutDown="getShutDown">
+      </image-cropper>
+    </view>
+
+   <!-- 左滑 -->
+        <b-left-slide />
+
+  </view>
+<view slot="tab-third">
+<!-- 可滑动横向切换 -->
+<view bindtap='goswitch'>横向切换</view>
+ <!-- 纵向切换 -->
+<view bindtap='goswitch1'>longitudinal</view>
+</view>
+</b-tab-bar>

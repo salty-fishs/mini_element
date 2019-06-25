@@ -1,0 +1,5 @@
+    <!-- 多选 -->
+    <view class='chooses' bindtap='chooses'>
+      <view class='chooses-box' hidden='{{selected}}'></view>
+      <image class='chooses-img' hidden='{{!selected}}' src='/images/choose.png' />
+    </view>

@@ -1,0 +1,14 @@
+<!-- 顶部返回按钮 和页面标题 -->
+<view class='container  {{isIphoneX? "content-iphoneX" : ""}}'>
+  <view class='content'>
+    <!-- 返回上一层 -->
+    <button class='container-img' bindtap='getReturn' hidden='{{hidden}}'>
+      <image class='img' src='images/return.png'></image>
+    </button>
+    <!-- 返回自己指定的层级 -->
+    <view class='container-img' bindtap='getReturn1' hidden='{{!votsHidden}}'>
+      <image class='img' src='images/return.png'></image>
+    </view>
+    <view class='title'>{{title}}</view>
+  </view>
+</view>

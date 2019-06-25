@@ -1,0 +1,88 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.6.1",
+	"appid": "wx7e60d0cf2f292032",
+	"projectname": "%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BB%84%E4%BB%B6",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 5,
+			"list": [
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 1,
+					"name": "首页",
+					"pathName": "pages/tabBar/tabBar",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "cs",
+					"pathName": "pages/logo/logo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 3,
+					"name": "添加多张图片并且剪切图片大小",
+					"pathName": "pages/add-img/add-img",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "横向切换",
+					"pathName": "pages/cross-switch/swiper-switch/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "纵向切换",
+					"pathName": "pages/portait/index",
+					"scene": null
+				}
+			]
+		}
+	}
+}

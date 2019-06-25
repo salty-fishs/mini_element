@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "b-top-nav": "/component/top-navigation/index",
+    "image-cropper": "/component/image-cropper/image-cropper"
+  }
+}

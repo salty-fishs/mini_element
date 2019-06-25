@@ -1,0 +1,26 @@
+.container {
+  position: relative;
+}
+
+.textarea-view {
+  position: absolute;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  left: 0;
+  width: 300rpx;
+  line-height: 32rpx;
+  font-size: 30rpx;
+  color: red;
+}
+
+.textarea-type {
+  position: absolute;
+  width: 300rpx;
+  height: 300rpx;
+  font-size: 30rpx;
+  left: 0;
+  top: 0;
+  overflow-y: hidden;
+  word-break: break-all;
+  word-wrap: break-word;
+}

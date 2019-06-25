@@ -1,0 +1,20 @@
+<!-- 轮播图 -->
+<form bindsubmit="formSubmit" report-submit='true'>
+  <view class="swiper-container" >
+  <swiper style="height: {{swiperHeight}}rpx" autoplay="true" interval="3000" duration="1000" bindchange="swiperChange"  circular="true">
+    <block wx:for="{{banners}}" wx:key="id"  >
+      <swiper-item  >
+      <button formType="submit"  class='banner-btn-img' bindtap="getBanner" data-index="{{index}}" id="{{item.apply_id}}">
+          <image src="{{item.banner_url}}" mode='aspectFill' class="slide-image" />
+      </button>
+      </swiper-item>
+    </block>
+  </swiper>
+  <!-- 滚动条 -->
+  <view class="dots">
+    <block wx:for="{{banners}}" wx:key="unique">
+      <view class="dot{{index == swiperCurrent ? ' active' : ''}}"></view>
+    </block>
+  </view>
+</view>
+</form>

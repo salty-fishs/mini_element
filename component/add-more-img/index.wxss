@@ -1,0 +1,19 @@
+
+.avatar-box-images{
+  display: flex;
+ 
+}
+.images-add{
+  width: 196rpx;   /*  */
+  height: 122rpx; /*  */
+  border: 1px solid rgba(204, 204, 204, 1);
+  font-size: 80rpx;
+  color: rgba(204, 204, 204, 1);
+  text-align: center;
+  border-radius: 8rpx;
+}
+.add-img{
+  width: 196rpx;  /*  */
+  height: 122rpx; /*  */
+  margin-right: 10rpx;
+}

@@ -1,0 +1,53 @@
+/**index.wxss**/
+
+/*全局样式*/
+
+
+
+/*主容器*/
+.container{
+  display: flex;
+  justify-content: space-between;
+}
+.stepper {
+  display: flex;
+  justify-content: space-between;
+  height: 52rpx;
+  /* border: 1px solid #ccc; */
+  border-radius: 6rpx;
+}
+
+/*加号和减号*/
+.stepper text{
+  display: block;
+  width: 42rpx;
+  line-height: 52rpx;
+  text-align: center;
+}
+/*数值*/
+.stepper .input {
+  width: 80rpx;
+  height: 52rpx;
+  text-align: center;
+  font-size: 24rpx;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+/* 加号*/
+.plus{
+  background: red;
+}
+/* 减号 */
+.minus{
+  background: greenyellow;
+}
+/*普通样式*/
+.stepper .normal {
+  color: black;
+  
+}
+/*禁用样式*/
+.stepper .disable {
+  color: #fff;
+  background: #ccc;
+}

@@ -1,0 +1,48 @@
+.container{
+  padding-bottom: 100rpx;
+  
+}
+.nav {
+  padding-top: 12rpx;
+  padding-bottom: 9rpx;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: #f7f7f7;
+    font-size: 20rpx;
+    white-space: nowrap;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+}
+.nav-item {
+    width: 25%;  /*  */
+    display: inline-block;
+    text-align: center;
+    color: #000;
+    font-size: 20rpx;
+}
+
+.nav-item .nav-image{
+  width: 46rpx;
+  height: 46rpx;
+}
+/* 控制tab-bar图片单独的样式 */
+/* .nav-item:nth-child(1) .nav-image{
+  position: relative;
+   width: 56rpx;
+  height: 56rpx;
+} */
+.nav-item.active{
+    color: red;
+}
+.tab-box{
+    /* background: greenyellow; */
+    margin-top: 80rpx;
+    height: 100%;
+    box-sizing: border-box;
+}
+.tab-content{
+    overflow-y: scroll;
+}

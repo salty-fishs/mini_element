@@ -1,0 +1,4 @@
+<view>
+{{book.name}}
+sdfs
+</view>

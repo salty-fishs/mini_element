@@ -1,0 +1,8 @@
+<!-- 加减法操作 -->
+<view class='container'>
+  <view class='stepper'>
+    <text class='minus {{minusStatus}}' type='number' bindtap='bindMinus'>-</text>
+    <text class='input'>{{num}}</text>
+    <text class='plus' bindtap='bindPlus'>+</text>
+  </view>
+</view>

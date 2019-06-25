@@ -1,0 +1,52 @@
+.container {
+  padding-top: 140rpx;
+}
+.content{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 750rpx;
+  height: 140rpx;
+  line-height: 140rpx;
+  border-radius: 0;
+  background: #fff ;
+  color: #000 !important;
+}
+
+.container-img {
+  position: absolute;
+  top: 70rpx;
+  left: 30rpx;
+  width: 100rpx;
+  height: 60rpx;
+  z-index: 100;
+ 
+}
+.img {
+  width: 34rpx;
+  height: 34rpx;
+}
+.title {
+  font-size: 36rpx;
+  margin-top: 30rpx;
+}
+/* 苹果x的样式调整 */
+.content-iphoneX {
+  padding-top: 170rpx;
+}
+.content-iphoneX .content{
+  /* background: red !important; */
+  height: 170rpx;
+  line-height: 170rpx;
+}
+.content-iphoneX .content .container-img{
+  margin-top: 40rpx;
+}
+.content-iphoneX .content .title{
+  margin-top: 90rpx;
+}

@@ -1,0 +1,14 @@
+<b-top-nav title="component" hidden="true" />
+<view class='avatar-box'>
+  <view class='avatar-box-images'>
+    <block wx:for="{{newArr}}">
+      <image background-size="cover" bindtap="deleteaddress" data-id="{{item.id}}" class='add-img' mode="aspectFill" src="{{item.img}}" />
+    </block>
+    <view class='images-add' wx:if="{{3 >newArr.length}}" bindtap='getLicence'>+</view>
+  </view>
+</view>
+<view hidden='{{imageCropperHidden}}'>
+  <image-cropper id="image-cropper" limit_move="{{true}}" disable_rotate="{{true}}" width="{{width}}" height="{{height}}" imgSrc="{{src}}" bindload="cropperload" bindimageload="loadimage" bindtapcut="clickcut" bind:determine="getImage" bind:agin="getAgin"
+    bind:shutDown="getShutDown">
+  </image-cropper>
+</view>

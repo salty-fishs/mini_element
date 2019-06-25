@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "b-add-and-subtract": "/component/add-and-subtract/index",
+    "b-top-nav": "/component/top-navigation/index"
+  }
+}

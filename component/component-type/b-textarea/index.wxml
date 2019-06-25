@@ -1,0 +1,5 @@
+<!-- textarea 层级问题 -->
+<view class='container'>
+  <view class='textarea-view' bindtap='showText' hidden='{{hiddenText}}'>{{value}}</view>
+  <textarea class='textarea-type' focus="{{automaticFocus}}" bindblur="cancelTheInput" bindinput="toObtain" placeholder='{{value}}' hidden='{{hiddenText}}' />
+</view>
