@@ -1,0 +1,4 @@
+<view>
+<!-- 轮播图 -->
+ <b-banner swiperHeight="300" banners="{{banner}}" bind:banners="getBanners" />
+</view>

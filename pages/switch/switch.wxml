@@ -1,0 +1,24 @@
+<!-- 可以滑动  自定义tab菜单标签组件-->
+<scroll-view scroll-x="true" class="scroll-view-x" wx:if="{{!ttype || ttype==2}}">
+  <view class="scroll-view-item class-width" wx:for="{{tList}}" wx:key="*this">
+    <view bindtap="swichNav" data-current="{{index}}">
+      <text class="{{currentTab==(index) ? 'on' : ''}}">{{ !tname ? item.name : item[tname].name }}</text>
+    </view>
+  </view>
+</scroll-view>
+<!--内容列表-->
+<swiper current="{{currentType}}" bindchange="bindChange" style="height: {{switchHeight}}rpx">
+  <swiper-item wx:for="{{tList}}" wx:key="">
+  <!-- scrollHeight 屏幕可视高度   -->
+    <scroll-view style='height:{{switchHeight}}rpx;' scroll-y="true" class='scroll-hidde' bindscrolltolower="lower">
+      <view wx:if="{{currentTab === 0}}">
+        <!-- tab菜单的内容 -->
+        1
+      </view>
+      <view wx:if="{{currentTab === 1}}">
+        <!-- tab菜单的内容 -->
+        2
+      </view>
+    </scroll-view>
+  </swiper-item>
+</swiper>

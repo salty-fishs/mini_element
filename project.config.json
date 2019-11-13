@@ -39,47 +39,33 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 5,
+			"current": 3,
 			"list": [
 				{
-					"id": -1,
-					"name": "首页",
-					"pathName": "pages/index/index",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": 1,
-					"name": "首页",
-					"pathName": "pages/tabBar/tabBar",
+					"id": 0,
+					"name": "底部切换",
+					"pathName": "pages/tab-bar/tab-bar",
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
-					"name": "cs",
-					"pathName": "pages/logo/logo",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": 3,
-					"name": "添加多张图片并且剪切图片大小",
-					"pathName": "pages/add-img/add-img",
+					"name": "图片剪切",
+					"pathName": "pages/image-shear/image-shear",
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
-					"name": "横向切换",
-					"pathName": "pages/cross-switch/swiper-switch/index",
+					"name": "多张图片添加剪切",
+					"pathName": "pages/image-shears/image-shears",
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
-					"name": "纵向切换",
-					"pathName": "pages/portait/index",
+					"name": "内容切换，滑动",
+					"pathName": "pages/switch/switch",
 					"scene": null
 				}
 			]

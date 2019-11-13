@@ -1,0 +1,16 @@
+<b-top-nav title="component1111" hidden="true" />
+
+<b-tab-bar tabBar="{{tabBar}}" bind:tabBar="goTabBar" currentTab="{{currentTab}}">
+  <view slot="tab-frist">
+    1
+  </view>
+  <view slot="tab-second">
+    2
+  </view>
+  <view slot="tab-third">
+    3
+  </view>
+  <view slot="tab-fourth">
+    4
+  </view>
+</b-tab-bar>

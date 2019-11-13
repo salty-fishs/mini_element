@@ -1,8 +1,0 @@
- <b-top-nav title="component1111" hidden="{{playerReturn}}"  />
- <!-- height 控制swiper的高度，appleXHeight控制苹果x下swiper的高度 -->
-  <b-swiper-switch tList="{{status_type}}" content="{{content1}}" class-width="value-width" bind:changeCurrent="swichNav" height="210" appleXHeight="350">
-    <view slot="frist"> 
-      <!-- 内容 -->
-       sd
-     </view>
-  </b-swiper-switch>

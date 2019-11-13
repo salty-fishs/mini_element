@@ -1,44 +1,65 @@
 Page({
+
+  /**
+   * 页面的初始数据
+   */
   data: {
-    price:100,
-    price1:20,
-    price2: 20,
-    counts:0,
-    counts1: 0,
-    counts2: 0,
-    // 切换
-    navData: [
-      {
-        text: '首页'
-      },
-      {
-        text: '健康'
-      },
-    
+    // 轮播图
+    banner: [
+      { banner_url: 'https://pettrip.bxfzkj.cn/static/upload/15507338577.jpg' },
+      { banner_url: 'http://vote.bxfzkj.cn/static/upload/15549657889.jpg' }
     ],
- 
   },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
     
   },
-  bindPlus:function(e){
-    this.setData({
-      counts: e.detail.counts
-    })
+
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady: function () {
+    
   },
-  bindPlus1: function (e) {
-    this.setData({
-      counts1: e.detail.counts
-    })
+
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow: function () {
+    
   },
-  bindPlus2: function (e) {
-    this.setData({
-      counts2: e.detail.counts
-    })
+
+  /**
+   * 生命周期函数--监听页面隐藏
+   */
+  onHide: function () {
+    
   },
+
+  /**
+   * 生命周期函数--监听页面卸载
+   */
+  onUnload: function () {
+    
+  },
+
+  /**
+   * 页面相关事件处理函数--监听用户下拉动作
+   */
+  onPullDownRefresh: function () {
+    
+  },
+
+  /**
+   * 页面上拉触底事件的处理函数
+   */
+  onReachBottom: function () {
+    
+  },
+
   /**
    * 用户点击右上角分享
    */

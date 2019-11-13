@@ -1,6 +1,0 @@
-<view class='container' hidden='{{hidden}}' bindtap='guanPopupWindow'>
-  <view class='content {{!animationHidden? "animation-start" :"animation-guan" }}' catchtap="inbtn">
-    <!-- 内容 -->
-    <slot></slot> 
-  </view>
-</view>

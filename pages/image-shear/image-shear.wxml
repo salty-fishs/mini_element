@@ -1,0 +1,13 @@
+<view>图片剪切</view>
+<!-- 头像剪切 -->
+<view class='avatar-box'>
+  <image src="{{imgSrc}}" name="src" class="avatar" bindtap='getLicence'></image>
+  <view class="avatar-item" bindtap="getLicence" hidden='{{avatarItemHidden}}'>
+    <text>点击添加图片</text>
+  </view>
+</view>
+<view hidden='{{imageCropperHidden}}'>
+  <image-cropper id="image-cropper" limit_move="{{true}}" disable_rotate="{{true}}" width="{{width}}" height="{{height}}" imgSrc="{{src}}" bindload="cropperload" bindimageload="loadimage" bindtapcut="clickcut" bind:determine="getImage" bind:agin="getAgin"
+    bind:shutDown="getShutDown">
+  </image-cropper>
+</view>

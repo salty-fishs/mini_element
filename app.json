@@ -1,18 +1,16 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/tabBar/tabBar",
-    "pages/logo/logo",
-    "pages/add-img/add-img",
-    "pages/cross-switch/swiper-switch/index",
-    "pages/portait/index"
+    "pages/tab-bar/tab-bar",
+    "pages/image-shear/image-shear",
+    "pages/image-shears/image-shears",
+    "pages/switch/switch"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black",
-    "navigationStyle": "custom"
+    "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json"
 }
