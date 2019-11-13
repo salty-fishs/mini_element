@@ -6,14 +6,11 @@ Page({
    */
   data: {
     // 图片剪切   改变组件内export_scale的值 * width 等于图片的大小
+    localSrc: '', //获取本地图片
     width: 250, //图片剪切宽度
-    height: 250, //图片剪切高度
-    src: '',
-    hiddem: false,
-    pet_avatar: '',
+    height: 200, //图片剪切高度
     imageCropperHidden: true,
-    imgSrc: '',
-    imageCropperHidden: true,
+    imgShearSrc: '',  //剪切后的图片
   },
 
   /**
@@ -22,7 +19,7 @@ Page({
   onLoad: function(options) {
 
   },
-  // 剪切图片
+  // 点击剪切图片
   getLicence() {
     this.setData({
       imageCropperHidden: !this.data.imageCropperHidden,
@@ -32,7 +29,6 @@ Page({
     this.cropper.upload();
   },
   getAgin() {
-
     this.cropper.upload();
   },
   getShutDown() {
@@ -52,13 +48,13 @@ Page({
       },
       success(res) {
         var success = JSON.parse(res.data)
-        console.log(success, '文件是否')
-        var imgSrc = JSON.parse(res.data).d
+        var imgShearSrc = JSON.parse(res.data).d
         if (success.c == 0) {
           that.setData({
             avatarItemHidden: true,
             avatarHidden: false,
-            imgSrc,
+            imgShearSrc,
+  
             imageCropperHidden: !that.data.imageCropperHidden,
             searchHidden: false,
           })
@@ -68,13 +64,12 @@ Page({
             icon: 'none'
           })
           that.setData({
-            imgSrc: '',
+            imgShearSrc: '',
             searchHidden: false,
           })
         }
       }
     })
-
   },
   cropperload(e) {
     console.log("cropper初始化完成");

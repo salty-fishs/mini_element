@@ -1,6 +1,3 @@
-<view>图片剪切</view>
-<view>图片剪切</view>
-<view>图片剪切</view>
 <view class='avatar-box'>
   <view class='avatar-box-images'>
     <block wx:for="{{newArr}}">

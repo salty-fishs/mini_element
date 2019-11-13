@@ -2,13 +2,6 @@
   "usingComponents": {
     "b-top-nav": "/component/top-navigation/index",
     "b-tab-bar": "/component/tab-bar/index",
-    "b-banner": "/component/banner/index",
-    "b-add-and-subtract": "/component/add-and-subtract/index",
-    "b-textarea" : "/component/component-type/b-textarea/index",
-    "b-popup-window":"/component/popup-window/below/index",
-    "image-cropper": "/component/image-cropper/image-cropper",
-    "b-choose": "/component/choose/index",
-    "b-left-slide": "/component/left-slide/index",
-    "b-count-down": "/component/count-down/index"
+    "b-banner": "/component/banner/index"
   }
 }

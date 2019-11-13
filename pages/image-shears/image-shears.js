@@ -10,10 +10,8 @@ Page({
     height: 188, //图片剪切高度
     src: '',
     hiddem: false,
-    pet_avatar: '',
     imageCropperHidden: true,
     imgSrc: '',
-    imageCropperHidden: true,
     newArr: [],
     imgArray: [],
   },

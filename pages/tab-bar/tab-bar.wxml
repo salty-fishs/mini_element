@@ -1,4 +1,4 @@
-<b-top-nav title="component1111" hidden="true" />
+<!-- <b-top-nav title="component1111" hidden="true" /> -->
 
 <b-tab-bar tabBar="{{tabBar}}" bind:tabBar="goTabBar" currentTab="{{currentTab}}">
   <view slot="tab-frist">
