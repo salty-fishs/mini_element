@@ -1,7 +1,3 @@
-import {
-  RankingModel
-} from '../../models/ranking.js'
-let rankingApi = new RankingModel();
 Page({
 
   /**
@@ -27,22 +23,6 @@ Page({
    */
   onLoad: function (options) {
     this.clientHeight()
-    // 当月排名
-    rankingApi.getCurrentMonth()
-      .then(res => {
-        console.log(res)
-        this.setData({
-          currentMonth: res.data
-        })
-      })
-    //棋币排名 
-    rankingApi.getCurrentMonthUser()
-      .then(res => {
-        console.log(res)
-        this.setData({
-          currentMonthUser: res.data
-        })
-      })
   },
   // 点击tab切换 
   swichNav(e) {

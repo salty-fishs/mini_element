@@ -1,4 +1,4 @@
 <view>
-<!-- 轮播图 -->
+<!-- 轮播图 swiperHeight图片高度-->
  <b-banner swiperHeight="300" banners="{{banner}}" bind:banners="getBanners" />
 </view>
